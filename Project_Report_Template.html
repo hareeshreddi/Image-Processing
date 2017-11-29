@@ -19,11 +19,10 @@
 			<div class="title">DICTIONARY LEARNING</div>
 
 			<div class="authors">
-
 				<!-- Start edit here  -->
-				<p style="font-size:15px">M Karthik, Roll No.: 150102031, Branch: ECE</p>; &nbsp; &nbsp;
-				<p style="font-size:15px">G Yoganand, Roll No.: 150102022, Branch: ECE</p>; &nbsp; &nbsp;
-				<p style="font-size:15px">K Vijay, Roll No.: 150102028, Branch: ECE</p>; &nbsp; &nbsp;
+				<p style="font-size:15px; color:Tomato;">M Karthik, Roll No: 150102031, Branch: ECE</p> &nbsp; &nbsp;
+				<p style="font-size:15px; color:Tomato;">G Yoganand, Roll No: 150102022, Branch: ECE</p> &nbsp; &nbsp;
+				<p style="font-size:15px; color:Tomato;">K Vijay, Roll No: 150102028, Branch: ECE</p> &nbsp; &nbsp;
 				<!-- Stop edit here -->
 
 			</div>
@@ -77,7 +76,7 @@ Each centroid of a cluster is a collection of feature values which define the re
 </p>
 
 <p style="font-size:14px">
-Spherical K-Means Clustering:<br>
+<mark>Spherical K-Means Clustering:</mark><br>
 The Spherical K-means algorithm, i.e., the K-means algorithm with cosine similarity, is a popular method for clustering high-dimensional text data. In this algorithm, each vector as well as each cluster mean is represented as a high-dimensional unit-length vector. That is, each cluster mean vector is updated, only after all document vectors being assigned, as the (normalized) average of all the document vectors assigned to that cluster. It is very useful in clustering of large data sets. The basic methodology here is, firstly, we found the mean of whole data set and updated the whole data set by subtracting it from every vector. This differentiated each vector making closer ones go farther, and farther ones come. We then converted each data into a unit vector, assigned certain levels to each data set and found the mean vector of the respective levels. We later converted them into unit vectors too. A list is created which stores the vector indices present in the given cluster. This marks completion of one iteration. Dot product of each unit vector with every level means is calculated and the cluster mean which gets the maximum dot product stores the vector i.e. the list storing the indices is updated. New means of the updated clusters are calculated and are converted to unit mean vectors. Dot products of the new unit mean vectors and the previous unit mean vectors are calculated. If dot product values of all mean vectors are greater than threshold (In our code we used 0.99 as threshold), the process is terminated, else the next iteration starts and the whole process repeats.
 </p>
 
