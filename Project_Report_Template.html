@@ -36,7 +36,7 @@
 					<!-- Start edit here  -->
 					Dictionary learning is a branch of signal processing and machine learning that aims at finding a frame (called dictionary) in which some training data admits a sparse representation. The sparser the representation, the better the dictionary.
 					
-Our  project is about Dictionary learning. We take Images of ‘N’ number of people, each persons having Ni number of images  and we vectorise the images of each person as rows or columns . After the vectorization, we did K- Means clustering  of all the vectors of Nth person and we got Means of these images and the labels of all these vectors were also stored. We did co-variance of these images having same label. Then we did M-Spherical means and we get the dictionary. We didn’t use any Features.
+Our  project is Dictionary learning. We take Images of ‘N’ number of people, each persons having Ni number of images  and we vectorise the images of each person as rows or columns . After the vectorization, we did K- Means clustering  of all the vectors of Nth person and we got Means of these images and the labels of all these vectors were also stored. We did co-variance of these images having same label. Then we did M-Spherical means and we get the dictionary. We didn’t use any Features.
 					<!-- Stop edit here -->
 
 				</div>
@@ -61,8 +61,8 @@ Rather than defining groups before looking at the data, clustering allows you to
 Each centroid of a cluster is a collection of feature values which define the resulting groups. Examining the centroid feature weights can be used to qualitatively interpret what kind of group each cluster represents.  
 Spherical K-Means Clustering:
 The Spherical K-means algorithm, i.e., the K-means algorithm with cosine similarity, is a popular method for clustering high-dimensional text data. In this algorithm, each vector as well as each cluster mean is represented as a high-dimensional unit-length vector. That is, each cluster mean vector is updated, only after all document vectors being assigned, as the (normalized) average of all the document vectors assigned to that cluster. It is very useful in clustering of large data sets. The basic methodology here is, firstly, we found the mean of whole data set and updated the whole data set by subtracting it from every vector. This differentiated each vector making closer ones go farther, and farther ones come. We then converted each data into a unit vector, assigned certain levels to each data set and found the mean vector of the respective levels. We later converted them into unit vectors too. A list is created which stores the vector indices present in the given cluster. This marks completion of one iteration. Dot product of each unit vector with every level means is calculated and the cluster mean which gets the maximum dot product stores the vector i.e. the list storing the indices is updated. New means of the updated clusters are calculated and are converted to unit mean vectors. Dot products of the new unit mean vectors and the previous unit mean vectors are calculated. If dot product values of all mean vectors are greater than threshold (In our code we used 0.99 as threshold), the process is terminated, else the next iteration starts and the whole process repeats. 
-<img src="Pictures/dict.png" alt="This text displays when the image is umavailable" width="300px" height=""/>
-<img src="Pictures/dict1.png" alt="This text displays when the image is umavailable" width="300px" height=""/>
+<img src="Pictures/dict.png" alt="This text displays when the image is unavailable" width="300px" height="150px"/>
+<img src="Pictures/dict1.png" alt="This text displays when the image is unavailable" width="300px" height="200px"/>
 					<!-- Stop edit here -->
 
 				</div>
@@ -178,8 +178,8 @@ EGN gives matrix of eigen vectors and matrix of eigen values.Here we choosed fir
 					<div class="heading">3.3 Codes</div>
 					<div class="text">
 <a href="https://github.com/hareeshreddi/Image-Processing/blob/master/input_read.m">Reads all the data of images in the folder</a>
-
-<a href="https://github.com/hareeshreddi/Image-Processing/blob/master/imagepath.m">vectorises the images into rows or columns</a>
+<a href="https://github.com/hareeshreddi/Image-Processing/blob/master/imagepath.m">vectorises the images into rows or columns
+</a>
 
 <a href="https://github.com/hareeshreddi/Image-Processing/blob/master/best_result.m">Initialises the centroids</a>
 
@@ -196,7 +196,7 @@ EGN gives matrix of eigen vectors and matrix of eigen values.Here we choosed fir
 <a href="https://github.com/hareeshreddi/Image-Processing/blob/master/dic_project.m">This is our complete project script.</a>
 
 					</div>
-			       </div>
+			</div>
 
 			<div class="section">
 				<div class="heading">4. Conclusions</div>
