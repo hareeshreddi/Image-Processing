@@ -62,10 +62,10 @@ If Dictionary contains more atoms than the dimension of the image signal then it
 </p>
 
 <p style="font-size:14px">
-K-means clustering is a type of unsupervised learning, which is used when you have unlabeled data (i.e., data without defined categories or groups). The goal of this algorithm is to find groups in the data, with the number of groups represented by the variable K. The algorithm works iteratively to assign each data point to one of K groups based on the features that are provided. Data points are clustered based on feature similarity. The results of the K-means clustering algorithm are:
-
-1.	The centroids of the K clusters, which can be used to label new data
-2.	Labels for the training data (each data point is assigned to a single cluster)
+K-means clustering is a type of unsupervised learning, which is used when you have unlabeled data (i.e., data without defined categories or groups). The goal of this algorithm is to find groups in the data, with the number of groups represented by the variable K. The algorithm works iteratively to assign each data point to one of K groups based on the features that are provided. Data points are clustered based on feature similarity.<br>
+<br>&nbsp;The results of the K-means clustering algorithm are:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.The centroids of the K clusters, which can be used to label new data<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.Labels for the training data (each data point is assigned to a single cluster)
 </p>
 
 <p style="font-size:14px">
@@ -77,7 +77,7 @@ Each centroid of a cluster is a collection of feature values which define the re
 </p>
 
 <p style="font-size:14px">
-Spherical K-Means Clustering:
+Spherical K-Means Clustering:<br>
 The Spherical K-means algorithm, i.e., the K-means algorithm with cosine similarity, is a popular method for clustering high-dimensional text data. In this algorithm, each vector as well as each cluster mean is represented as a high-dimensional unit-length vector. That is, each cluster mean vector is updated, only after all document vectors being assigned, as the (normalized) average of all the document vectors assigned to that cluster. It is very useful in clustering of large data sets. The basic methodology here is, firstly, we found the mean of whole data set and updated the whole data set by subtracting it from every vector. This differentiated each vector making closer ones go farther, and farther ones come. We then converted each data into a unit vector, assigned certain levels to each data set and found the mean vector of the respective levels. We later converted them into unit vectors too. A list is created which stores the vector indices present in the given cluster. This marks completion of one iteration. Dot product of each unit vector with every level means is calculated and the cluster mean which gets the maximum dot product stores the vector i.e. the list storing the indices is updated. New means of the updated clusters are calculated and are converted to unit mean vectors. Dot products of the new unit mean vectors and the previous unit mean vectors are calculated. If dot product values of all mean vectors are greater than threshold (In our code we used 0.99 as threshold), the process is terminated, else the next iteration starts and the whole process repeats.
 </p>
 
